@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainPage from '@/components/MainPage'
 import ListBreeds from '@/components/ListBreeds'
 import BreedImages from '@/components/BreedImages'
 import subBreedImages from '@/components/subBreedImages'
@@ -12,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'mainPage',
-      component: MainPage
+      component: ListBreeds
     },
     {
       path: '/listbreeds',
