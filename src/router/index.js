@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainPage from '@/components/MainPage'
 import ListBreeds from '@/components/ListBreeds'
+import BreedImages from '@/components/BreedImages'
+import subBreedImages from '@/components/subBreedImages'
 
 Vue.use(Router)
 
@@ -18,9 +20,14 @@ export default new Router({
       component: ListBreeds
     },
     {
-      path: '/breed/:id/images',
+      path: '/breed/:breed/images',
       name: 'imagesbreed',
-      component: ListBreeds
+      component: BreedImages
+    },
+    {
+      path: '/subbreed/:breed/:subBreed/images',
+      name: 'imagessubbreed',
+      component: subBreedImages
     }
   ]
 })
